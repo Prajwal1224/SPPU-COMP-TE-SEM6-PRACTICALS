@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h1 {
+            color: darkred;
+            text-align: center;
+        }
+        .contact-info {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .map {
+            width: 80%;
+            margin: 20px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="images/logo.png" alt="Restaurant Logo" width="150">
+        <h1>Contact Us</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="menu.htm">Menu</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Information -->
+    <div class="contact-info">
+        <h2>Visit Us</h2>
+        <p><strong>Address:</strong> 123 Food Street, Prajwal Villa, Pune 400001</p>
+        <p><strong>Phone:</strong> +91 9322000000</p>
+        <p><strong>Email:</strong> prajwalnewase18@gmail.com</p>
+        <p><strong>Opening Hours:</strong><br>
+        Monday-Friday: 11:00 AM - 10:00 PM<br>
+        Saturday-Sunday: 10:00 AM - 11:00 PM</p>
+    </div>
+
+    <!-- Map -->
+    <div class="map">
+        <h2>Our Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.715725661135!2d72.8242143153765!3d19.05272225793463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8df0a854749%3A0xe5e7a5a1a1a3b3b5!2s123%20Food%20Street%2C%20Mumbai!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+        </iframe>
+    </div>
+
+    <!-- Contact Form -->
+    <section>
+        <h2 style="text-align: center;">Send Us a Message</h2>
+        <form action="submit.php" method="post">
+            <label>Name:</label>
+            <input type="text" name="name" required><br>
+            <label>Email:</label>
+            <input type="email" name="email" required><br>
+            <label>Subject:</label>
+            <input type="text" name="subject" required><br>
+            <label>Message:</label>
+            <textarea name="message" required></textarea><br>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p style="text-align:center;">&copy; 2025 Delicious Bites. All rights reserved.</p>
+    </footer>
+</body>
+</html>

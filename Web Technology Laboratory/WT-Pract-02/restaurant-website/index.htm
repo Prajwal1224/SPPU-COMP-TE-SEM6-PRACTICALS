@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites - Home</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS -->
+    <style>
+        /* Internal CSS */
+        h1 {
+            color: darkred;
+            text-align: center;
+        }
+        .welcome {
+            font-size: 18px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="images/logo.png" alt="Restaurant Logo" width="150">
+        <h1>Welcome to Delicious Bites</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="menu.htm">Menu</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner Image -->
+    <div class="banner">
+        <img src="images/banner.jpg" alt="Restaurant Banner" width="100%">
+    </div>
+
+    <!-- About Section -->
+    <section>
+        <h2>About Us</h2>
+        <p class="welcome">At Delicious Bites, we serve freshly cooked meals made with love. Visit us for an amazing dining experience.</p>
+    </section>
+
+    <!-- Menu Section -->
+<section>
+    <h2>Our Special Dishes</h2>
+    <table style="width: 80%; margin: auto; border-collapse: collapse;" border="1">
+        <tr>
+            <th>Dish</th>
+            <th>Image</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Spaghetti Carbonara</td>
+            <td><img src="images/dish1.jpg" width="100"></td>
+            <td>₹350</td>
+        </tr>
+        <tr>
+            <td>Paneer Butter Masala</td>
+            <td><img src="images/dish2.jpg" width="100"></td>
+            <td>₹280</td>
+        </tr>
+    </table>
+</section>
+
+
+    <!-- Contact Form -->
+    <section>
+        <h2>Reservation Form</h2>
+        <form action="submit.php" method="post">
+            <label>Name:</label>
+            <input type="text" name="name" required><br>
+            <label>Email:</label>
+            <input type="email" name="email" required><br>
+            <label>Date:</label>
+            <input type="date" name="date" required><br>
+            <label>Message:</label>
+            <textarea name="message"></textarea><br>
+            <input type="submit" value="Book Now">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p style="text-align:center;">&copy; 2025 Delicious Bites. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
